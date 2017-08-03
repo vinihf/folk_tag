@@ -5,3 +5,5 @@ This project is an experience about marking and folksonomy. It is intended to in
 In addition, it is an exercise to practice web programming with php and database.
 
 Feel free to increase it.
+
+Demo: www.vhflabs.com.br/folk_tag
