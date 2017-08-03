@@ -27,6 +27,7 @@ if(!isset($_SESSION['index'])){
 </script>
 </head>
 <body>
+<div class='container-fluid'>
 <?php
 if($_SESSION['index']<=6){
 	include_once "db/MySQL.class.php";
@@ -34,7 +35,7 @@ if($_SESSION['index']<=6){
 	$sql = "select * from image where id = ".($_SESSION['index']+2);
 	$image = $conn->search($sql);
 ?>
-<div class='container-fluid'>
+
 <div class='row'>
 <div class='col-md-4 col-md-offset-4'>
 <h2>In 1 word, describe the image below:</h2>
@@ -50,20 +51,23 @@ if($_SESSION['index']<=6){
 echo "<img style='height:450px;width:auto;' class='img-thumbnail' src=img/".$image[0]['src'].">";
 echo "</div>";
 echo "</div>";
-echo "</div>";
 echo "</body>";
 }else{
 ?>
-<div class='container-fluid'>
 <div class='row'>
 <div class='col-md-2 col-md-offset-5'>
 <h1>Thank you!!</h1>
 </div>
 </div>
-</div>
-</body>
 <?php
 session_unset();
 }
 ?>
+<div class='row'>
+<div class='col-md-1 col-md-offset-11'>
+<a href='https://github.com/vinihf/folk_tag' target="_blank"> <img src='icon.png'  style='height:35px;width:auto;'> </a>
+</div>
+</div>
+</div>
+</body>
 </html>
