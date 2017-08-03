@@ -57,7 +57,7 @@ echo "</body>";
 <div class='container-fluid'>
 <div class='row'>
 <div class='col-md-2 col-md-offset-5'>
-<h1>Thank you!</h1>
+<h1>Thank you!!</h1>
 </div>
 </div>
 </div>
